@@ -100,21 +100,21 @@ const questionsToSeed = [
         text: "Which country won the FIFA World Cup in 2014?",
         options: ["Brazil", "Germany", "Argentina", "Spain"],
         correctAnswerIndex: 1,
-        category: "Sport",
+        category: "Sports",
         difficulty: "easy"
     },
     {
         text: "How many players are there on a standard rugby union team?",
         options: ["11", "13", "15", "17"],
         correctAnswerIndex: 2,
-        category: "Sport",
+        category: "Sports",
         difficulty: "medium"
     },
     {
         text: "Who holds the record for the most Grand Slam singles titles in men’s tennis?",
         options: ["Roger Federer", "Rafael Nadal", "Novak Djokovic", "Pete Sampras"],
         correctAnswerIndex: 2,
-        category: "Sport",
+        category: "Sports",
         difficulty: "hard"
     },
 ];
