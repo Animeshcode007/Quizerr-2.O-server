@@ -1,8 +1,8 @@
 const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 const mongoose = require('mongoose');
-const connectDB = require('../config/db'); 
-const Question = require('../models/Question'); 
+const connectDB = require('../config/db');
+const Question = require('../models/Question');
 
 const questionsToSeed = [
     {
@@ -39,7 +39,42 @@ const questionsToSeed = [
         correctAnswerIndex: 2,
         category: "General Knowledge",
         difficulty: "easy"
-    }
+    },
+    {
+        text: "Mount Kilimanjaro is located in which country?",
+        options: ["Kenya", "Tanzania", "Uganda", "Ethiopia"],
+        correctAnswerIndex: 1,
+        category: "General Knowledge",
+        difficulty: "hard"
+    },
+    {
+        text: "Which country hosted the 2016 Summer Olympics?",
+        options: ["China", "Brazil", "United Kingdom", "Russia"],
+        correctAnswerIndex: 1,
+        category: "General Knowledge",
+        difficulty: "easy"
+    },
+    {
+        text: "What is the smallest prime number?",
+        options: ["0", "1", "2", "3"],
+        correctAnswerIndex: 2,
+        category: "General Knowledge",
+        difficulty: "easy"
+    },
+    {
+        text: "Which famous scientist developed the theory of general relativity?",
+        options: ["Isaac Newton", "Albert Einstein", "Nikola Tesla", "Galileo Galilei"],
+        correctAnswerIndex: 1,
+        category: "General Knowledge",
+        difficulty: "medium"
+    },
+    {
+        text: "Who wrote the play ‘Romeo and Juliet’?",
+        options: ["Christopher Marlowe", "William Shakespeare", "Ben Jonson", "John Donne"],
+        correctAnswerIndex: 1,
+        category: "General Knowledge",
+        difficulty: "easy"
+    },
 ];
 
 const seedDB = async () => {
